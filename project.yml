@@ -34,7 +34,7 @@ targets:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         CFBundleIconFiles:
-          - icon.png
+          - lfXCNiz.png
         CFBundleIcons:
           CFBundlePrimaryIcon:
             CFBundleIconFiles:
