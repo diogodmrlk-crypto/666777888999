@@ -3,6 +3,8 @@ options:
   bundleIdPrefix: com.example
   deploymentTarget:
     iOS: "15.0"
+  createIntermediateGroups: true
+
 targets:
   NubankDashboard:
     type: application
@@ -13,13 +15,31 @@ targets:
           - "README.md"
           - "project.yml"
           - ".github"
+          - "package.json"
+          - "package-lock.json"
+          - "tsconfig.json"
+          - "vite.config.ts"
+          - "vercel.json"
+          - "index.html"
+          - "public"
+          - "src"
+          - "assets"
     info:
       path: Info.plist
       properties:
         CFBundleDisplayName: Nubank
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+        CFBundleIconFiles:
+          - icon.png
+        CFBundleIcons:
+          CFBundlePrimaryIcon:
+            CFBundleIconFiles:
+              - icon
+            UIPrerenderedIcon: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.example.nubankdashboard
@@ -27,3 +47,4 @@ targets:
         CODE_SIGNING_REQUIRED: NO
         CODE_SIGNING_ALLOWED: NO
         GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
