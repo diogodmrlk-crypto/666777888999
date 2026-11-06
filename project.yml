@@ -1,0 +1,29 @@
+name: NubankDashboard
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  NubankDashboard:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        excludes:
+          - "README.md"
+          - "project.yml"
+          - ".github"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Nubank
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.nubankdashboard
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        GENERATE_INFOPLIST_FILE: NO
